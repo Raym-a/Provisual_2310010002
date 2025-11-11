@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormPemesanan</class>
+ <widget class="QWidget" name="FormPemesanan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1106</width>
+    <height>465</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="btnEditPemesanan">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>320</y>
+     <width>90</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edit</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>501</width>
+     <height>246</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="horizontalSpacing">
+     <number>8</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>15</number>
+    </property>
+    <item row="1" column="0">
+     <widget class="QLabel" name="namaPemesananLabel">
+      <property name="text">
+       <string>Nama Pemesanan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="cbKonsumen"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="tanggalPesananLabel">
+      <property name="text">
+       <string>Tanggal Pesanan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QDateEdit" name="datePemesanan">
+      <property name="calendarPopup">
+       <bool>false</bool>
+      </property>
+      <property name="date">
+       <date>
+        <year>2000</year>
+        <month>1</month>
+        <day>2</day>
+       </date>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="totalHargaLabel">
+      <property name="text">
+       <string>Total Harga</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="txtTotalHarga"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="statusPemesananLabel">
+      <property name="text">
+       <string>Status Pemesanan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="cbStatusPemesanan">
+      <item>
+       <property name="text">
+        <string>Pilih Status</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Proses</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Selesai</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="txtIdPemesanan"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="iDPemesananLabel">
+      <property name="text">
+       <string>ID Pemesanan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="produkDipesanLabel">
+      <property name="text">
+       <string>Produk Dipesan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="txtProdukDipesan"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnTambahPemesanan">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>320</y>
+     <width>90</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simpan</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="TabelPemesanan">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>60</y>
+     <width>501</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID Pemesanan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nama Pemesanan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Produk Dipesan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tanggal Pesanan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Total Harga</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status Pemesanan</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>10</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>DATA PEMESANAN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnHapusPemesanan">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>320</y>
+     <width>90</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hapus</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editCari">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>380</y>
+     <width>491</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

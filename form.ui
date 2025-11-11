@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainPertambangan</class>
+ <widget class="QMainWindow" name="MainPertambangan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainPertambangan</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHalaman_Utama">
+    <property name="title">
+     <string>Halaman Utama</string>
+    </property>
+    <addaction name="actionData_Konsumen"/>
+    <addaction name="actionData_Pemesanan"/>
+    <addaction name="actionData_Produksi"/>
+    <addaction name="actionData_Pengiriman"/>
+   </widget>
+   <addaction name="menuHalaman_Utama"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionData_Konsumen">
+   <property name="text">
+    <string>Data Konsumen</string>
+   </property>
+  </action>
+  <action name="actionData_Pemesanan">
+   <property name="text">
+    <string>Data Pemesanan</string>
+   </property>
+  </action>
+  <action name="actionData_Produksi">
+   <property name="text">
+    <string>Data Produksi</string>
+   </property>
+  </action>
+  <action name="actionData_Pengiriman">
+   <property name="text">
+    <string>Data Pengiriman</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
